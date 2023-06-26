@@ -50,7 +50,7 @@
   </header>
   <!--..........HEADER END..........-->
   <!--..........MAIN..........-->
-  <main>
+  <main class="d-flex ">
     <div class="d-flex side-bar-ow">
       <!--sidebar-->
       <div class="d-flex flex-column align-items-center flex-shrink-0 p-3 text-bg-dark sidebar-bg-ow"
@@ -59,7 +59,7 @@
           <li class="nav-item">
             <a href="#" class="nav-link-bg-ow nav-link active d-flex align-items-center" aria-current="page">
               <div class="icon-ow-width"><i class="fa-solid fa-house"></i></div>
-              <span class="d-none d-sm-none d-md-block ms-3">Homes</span>
+              <span class="d-none d-sm-none d-md-block ms-3">Home</span>
             </a>
           </li>
           <li>
@@ -84,8 +84,283 @@
         </div>
       </div>
     </div>
-    <div class="right-container container overflow-auto">
-
+    <!--right container-->
+    <div class="right-container overflow-auto flex-grow-1 overflow-auto">
+      <!--Blue bg section-->
+      <div class="p-3 bg-primary">
+        <div class="row text-white">
+          <div class="col-lg-8 col-12">
+            <div class="row">
+              <!--boolean + categories badges-->
+              <div class="col-lg-6 col-12">
+                <div>
+                  <div class="d-flex align-items-center">
+                    <span class="fw-semibold h4">Boolean</span>
+                    <span class="badge rounded-pill bg-ow ">Piano blaze</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <span class="badge rounded-pill bg-ow ">3 app</span>
+                    <i class="fa-solid fa-angles-right"></i>
+                    <div class="d-flex align-items-center ">
+                      <span class="badge rounded-circle bg-ow show-more-badges"><i class="fa-solid fa-plus"></i></span>
+                      <span class="badge rounded-pill d-none-shrinking bg-ow ">Boolean mobile app</span>
+                      <span class="badge rounded-pill d-none-shrinking bg-ow ">Boolean web app</span>
+                      <span class="badge rounded-pill d-none-shrinking bg-ow ">Boolean blog app</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Online students-->
+              <div class="col-lg-6 col-12">
+                <div>
+                  <div class="fw-semibold">Studenti online negli ultimi 30 minuti</div>
+                  <span class="fw-semibold student-quantity">125</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Add students-->
+          <div class="col-lg-4 col-12">
+            <div class="container">
+              <div class="row">
+                <div class="col d-flex align-items-center">
+                  <span>Nuovo Studente</span>
+                  <div class="add-student-btn d-flex justify-content-center align-items-center"><i
+                      class="fa-regular fa-plus"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Main part-->
+      <div class="p-3">
+        <div class="row">
+          <div class="col-lg-7">
+            <!--Table-->
+            <div class="card mb-3">
+              <div class="card-header">
+                <h4>Prossime Classi</h4>
+              </div>
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="col-lg-8">Name</th>
+                      <th class="col-2 text-center d-none-media">Start date</th>
+                      <th class="col text-center d-none-media">ROI</th>
+                      <th class="col text-center">Status</th>
+                      <th class="col-2 text-center">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!--1-->
+                    <tr>
+                      <th>Classe 102</th>
+                      <td class="text-center d-none-media">17 May 2023</td>
+                      <td class="text-center d-none-media">20%</td>
+                      <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                      <td class="text-center">
+                        <div>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!--2-->
+                    <tr>
+                      <th>Classe 103</th>
+                      <td class="text-center d-none-media">18 May 2023</td>
+                      <td class="text-center d-none-media">20%</td>
+                      <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                      <td class="text-center">
+                        <div>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!--3-->
+                    <tr>
+                      <th>Classe 104</th>
+                      <td class="text-center d-none-media">20 May 2023</td>
+                      <td class="text-center d-none-media">20%</td>
+                      <td class="text-center"><span class="badge text-bg-warning text-white">Process</span>
+                      </td>
+                      <td class="text-center">
+                        <div>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!--4-->
+                    <tr>
+                      <th>Classe 105</th>
+                      <td class="text-center d-none-media">21 May 2023</td>
+                      <td class="text-center d-none-media">20%</td>
+                      <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                      <td class="text-center">
+                        <div>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!--5-->
+                    <tr>
+                      <th>Classe 106</th>
+                      <td class="text-center d-none-media">23 May 2023</td>
+                      <td class="text-center d-none-media">20%</td>
+                      <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                      <td class="text-center">
+                        <div>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!--6-->
+                    <tr>
+                      <th>Classe 107</th>
+                      <td class="text-center d-none-media">24 May 2023</td>
+                      <td class="text-center d-none-media">20%</td>
+                      <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
+                      <td class="text-center">
+                        <div>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!--7-->
+                    <tr>
+                      <th>Classe 108</th>
+                      <td class="text-center d-none-media">29 May 2023</td>
+                      <td class="text-center d-none-media">20%</td>
+                      <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                      <td class="text-center">
+                        <div>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!--8-->
+                    <tr>
+                      <th>Classe 109</th>
+                      <td class="text-center d-none-media">27 May 2023</td>
+                      <td class="text-center d-none-media">20%</td>
+                      <td class="text-center"><span class="badge text-bg-danger">Failed</span>
+                      </td>
+                      <td class="text-center">
+                        <div>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <!--9-->
+                    <tr>
+                      <th>Classe 110</th>
+                      <td class="text-center d-none-media">29 May 2023</td>
+                      <td class="text-center d-none-media">20%</td>
+                      <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                      <td class="text-center">
+                        <div>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-pen"></i>
+                          </button>
+                          <button class="class-btn">
+                            <i class="fa-solid fa-trash-can"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!--F.A.Q.-->
+            <div class="card">
+              <div class="card-header">
+                <h4>F.A.Q.</h4>
+              </div>
+              <div class="card-body">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Question #1
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Is life meaningless? Is it us who give meaning to life? Is actually everything in our hands? I think not.
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Question #2
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">I hate/love Bootstrap. Any advice on how to like it more? And discover all his potential? 
+                        Thank you in advance.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Question #3
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5"></div>
+        </div>
+      </div>
     </div>
   </main>
   <!--..........MAIN END..........-->
@@ -98,3 +373,13 @@
 </body>
 
 </html>
+
+<!--
+  <div class="justify-content-between d-flex">
+              <div class="fw-semibold">Boolean + badges</div>
+              <div>
+                <div class="fw-semibold">Studenti online negli ultimi 30 minuti</div>
+                <span class="fw-semibold">125</span>
+              </div>
+            </div>
+-->
