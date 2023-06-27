@@ -1,13 +1,11 @@
 :root {
   --nav-bar-ow-height: 78px;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   height: 100vh;
   overflow: hidden;
@@ -17,6 +15,7 @@ body {
 main {
   height: 100%;
 }
+
 /*-------------------Header-------------------*/
 .logo-mobile-bool {
   width: 46px;
@@ -30,15 +29,11 @@ main {
   border-radius: 10px;
   padding: 5px 10px;
 }
+
 /* -------------------Main------------------- */
 .main-height {
   height:calc(100vh - var(--nav-bar-ow-height));
 }
-
-/*sidebar*/
-/*.side-bar-ow {
-  height: calc(100% - var(--nav-bar-ow-height));
-}*/
 .icon-ow-width {
   width: 18px;
 }
@@ -48,7 +43,6 @@ main {
 .sidebar-bg-ow {
   background-image: url(../img/sidebar-bg.png);
 }
-
 .side-hover:hover {
   background-color: white;
   --bs-white-rgb: 0, 0, 0;
@@ -58,15 +52,12 @@ main {
 .right-container {
   background-color: #f8f9fa;
 }
-
 .color-text  {
   color:black;
 }
-
 .student-quantity {
   font-size: 2rem;
 }
-
 .add-student-btn {
   border:1px solid white;
   background-color: transparent;
@@ -75,29 +66,23 @@ main {
   height:40px;
   margin-left:10px;
 }
-
 .add-student-btn:active {
   background-color: #1553aa;
 }
-
 .bg-ow {
   background-color: #165bba;
   margin:3px;
 }
-
 .show-more-badges {
   display:none;
 }
-
 .class-img {
   width:30px;
   margin-right:10px;
 }
-
 .max-col-long {
   max-width:60%;
 }
-
 .class-btn {
   color:grey;
   border:1px solid grey;
@@ -106,7 +91,6 @@ main {
   height:30px;
   width:30px;
 }
-
 .offcanvas {
   --bs-offcanvas-width: 900px;
 }
@@ -114,8 +98,6 @@ main {
 
 
 /* -------------------Footer------------------- */
-
-
 @media screen and (max-width:1450px) {
   .d-none-shrinking {
     display:none;
@@ -123,10 +105,7 @@ main {
   .show-more-badges {
     display:block;
   }
-
-  
 }
-
 @media screen and (max-width:768px) {
   .d-none-media {
     display:none;
