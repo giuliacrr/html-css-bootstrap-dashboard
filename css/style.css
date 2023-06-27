@@ -31,6 +31,9 @@ main {
   padding: 5px 10px;
 }
 /* -------------------Main------------------- */
+.main-height {
+  height:calc(100vh - var(--nav-bar-ow-height));
+}
 
 /*sidebar*/
 /*.side-bar-ow {
@@ -61,10 +64,15 @@ main {
 
 .add-student-btn {
   border:1px solid white;
+  background-color: transparent;
   border-radius:7px;
   width:40px;
   height:40px;
   margin-left:10px;
+}
+
+.add-student-btn:active {
+  background-color: #1553aa;
 }
 
 .bg-ow {
@@ -74,6 +82,11 @@ main {
 
 .show-more-badges {
   display:none;
+}
+
+.class-img {
+  width:30px;
+  margin-right:10px;
 }
 
 .max-col-long {

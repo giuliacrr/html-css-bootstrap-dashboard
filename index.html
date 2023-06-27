@@ -50,7 +50,7 @@
   </header>
   <!--..........HEADER END..........-->
   <!--..........MAIN..........-->
-  <main class="d-flex ">
+  <main class="d-flex main-height">
     <div class="d-flex side-bar-ow">
       <!--sidebar-->
       <div class="d-flex flex-column align-items-center flex-shrink-0 p-3 text-bg-dark sidebar-bg-ow"
@@ -113,7 +113,7 @@
               <!--Online students-->
               <div class="col-lg-6 col-12">
                 <div>
-                  <div class="fw-semibold">Studenti online negli ultimi 30 minuti</div>
+                  <div class="fw-bold">Studenti online negli ultimi 30 minuti</div>
                   <span class="fw-semibold student-quantity">125</span>
                 </div>
               </div>
@@ -124,9 +124,80 @@
             <div class="container">
               <div class="row">
                 <div class="col d-flex align-items-center">
-                  <span>Nuovo Studente</span>
-                  <div class="add-student-btn d-flex justify-content-center align-items-center"><i
-                      class="fa-regular fa-plus"></i></div>
+                  <span class="fw-bold">Nuovo Studente</span>
+                  <button class="btn btn-primary add-student-btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="inputName" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="inputName">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputSurname" class="form-label">Surname</label>
+                          <input type="text" class="form-control" id="inputSurname">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="Street">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress2" class="form-label">Address 2</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">City</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">State</label>
+                          <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="inputZip" class="form-label">CAP</label>
+                          <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
+                          <div class="input-group">
+                            <div class="input-group-text">Choose file</div>
+                            <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="No file attached">
+                          </div>
+                        </div>
+                      
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              Check me out
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary fw-bold">Sign in</button>
+                          <button type="submit" class="btn bg-warning fw-bold">Empty</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -156,7 +227,10 @@
                   <tbody>
                     <!--1-->
                     <tr>
-                      <th>Classe 102</th>
+                      <th>
+                        <div class="d-flex align-items-center"><img class="class-img" src="img/class-avatar-fixed.png"
+                            alt="class avatar">Classe 102</div>
+                      </th>
                       <td class="text-center d-none-media">17 May 2023</td>
                       <td class="text-center d-none-media">20%</td>
                       <td class="text-center"><span class="badge text-bg-success">Done</span></td>
@@ -173,7 +247,10 @@
                     </tr>
                     <!--2-->
                     <tr>
-                      <th>Classe 103</th>
+                      <th>
+                        <div class="d-flex align-items-center"><img class="class-img" src="img/class-avatar-fixed.png"
+                            alt="class avatar">Classe 103</div>
+                      </th>
                       <td class="text-center d-none-media">18 May 2023</td>
                       <td class="text-center d-none-media">20%</td>
                       <td class="text-center"><span class="badge text-bg-success">Done</span></td>
@@ -190,7 +267,10 @@
                     </tr>
                     <!--3-->
                     <tr>
-                      <th>Classe 104</th>
+                      <th>
+                        <div class="d-flex align-items-center"><img class="class-img" src="img/class-avatar-fixed.png"
+                            alt="class avatar">Classe 104</div>
+                      </th>
                       <td class="text-center d-none-media">20 May 2023</td>
                       <td class="text-center d-none-media">20%</td>
                       <td class="text-center"><span class="badge text-bg-warning text-white">Process</span>
@@ -208,7 +288,10 @@
                     </tr>
                     <!--4-->
                     <tr>
-                      <th>Classe 105</th>
+                      <th>
+                        <div class="d-flex align-items-center"><img class="class-img" src="img/class-avatar-fixed.png"
+                            alt="class avatar">Classe 105</div>
+                      </th>
                       <td class="text-center d-none-media">21 May 2023</td>
                       <td class="text-center d-none-media">20%</td>
                       <td class="text-center"><span class="badge text-bg-success">Done</span></td>
@@ -225,7 +308,10 @@
                     </tr>
                     <!--5-->
                     <tr>
-                      <th>Classe 106</th>
+                      <th>
+                        <div class="d-flex align-items-center"><img class="class-img" src="img/class-avatar-fixed.png"
+                            alt="class avatar">Classe 106</div>
+                      </th>
                       <td class="text-center d-none-media">23 May 2023</td>
                       <td class="text-center d-none-media">20%</td>
                       <td class="text-center"><span class="badge text-bg-success">Done</span></td>
@@ -242,7 +328,10 @@
                     </tr>
                     <!--6-->
                     <tr>
-                      <th>Classe 107</th>
+                      <th>
+                        <div class="d-flex align-items-center"><img class="class-img" src="img/class-avatar-fixed.png"
+                            alt="class avatar">Classe 107</div>
+                      </th>
                       <td class="text-center d-none-media">24 May 2023</td>
                       <td class="text-center d-none-media">20%</td>
                       <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
@@ -259,7 +348,10 @@
                     </tr>
                     <!--7-->
                     <tr>
-                      <th>Classe 108</th>
+                      <th>
+                        <div class="d-flex align-items-center"><img class="class-img" src="img/class-avatar-fixed.png"
+                            alt="class avatar">Classe 108</div>
+                      </th>
                       <td class="text-center d-none-media">29 May 2023</td>
                       <td class="text-center d-none-media">20%</td>
                       <td class="text-center"><span class="badge text-bg-success">Done</span></td>
@@ -276,7 +368,10 @@
                     </tr>
                     <!--8-->
                     <tr>
-                      <th>Classe 109</th>
+                      <th>
+                        <div class="d-flex align-items-center"><img class="class-img" src="img/class-avatar-fixed.png"
+                            alt="class avatar">Classe 109</div>
+                      </th>
                       <td class="text-center d-none-media">27 May 2023</td>
                       <td class="text-center d-none-media">20%</td>
                       <td class="text-center"><span class="badge text-bg-danger">Failed</span>
@@ -294,7 +389,10 @@
                     </tr>
                     <!--9-->
                     <tr>
-                      <th>Classe 110</th>
+                      <th>
+                        <div class="d-flex align-items-center"><img class="class-img" src="img/class-avatar-fixed.png"
+                            alt="class avatar">Classe 110</div>
+                      </th>
                       <td class="text-center d-none-media">29 May 2023</td>
                       <td class="text-center d-none-media">20%</td>
                       <td class="text-center"><span class="badge text-bg-success">Done</span></td>
@@ -314,7 +412,7 @@
               </div>
             </div>
             <!--F.A.Q.-->
-            <div class="card">
+            <div class="card mb-3">
               <div class="card-header">
                 <h4>F.A.Q.</h4>
               </div>
@@ -322,43 +420,106 @@
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         Question #1
                       </button>
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Is life meaningless? Is it us who give meaning to life? Is actually everything in our hands? I think not.
-                        
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Is life meaningless? Is it us who give meaning to life? Is actually
+                        everything in our hands? I think not.
+
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                         Question #2
                       </button>
                     </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">I hate/love Bootstrap. Any advice on how to like it more? And discover all his potential? 
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">I hate/love Bootstrap. Any advice on how to like it more? And discover
+                        all his potential?
                         Thank you in advance.
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                         Question #3
                       </button>
                     </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                        demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body.
+                        Nothing more exciting happening here in terms of content, but just filling up the space to make
+                        it look, at least at first glance, a bit more representative of how this would look in a
+                        real-world application.</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-5"></div>
+          <div class="col-lg-5">
+            <!-- To-do List-->
+            <div class="card mb-3">
+              <h4 class="card-header">To do</h4>
+              <div class="card-body">
+                <ul class="border rounded list-group list-group-flush">
+                  <li class="list-group-item">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        New Classes Kickoff
+                      </label>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Bootstrap 5 lessons for class #102
+                      </label>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Check students github usernames
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--Active users-->
+            <div class="card mb-3">
+              <img src="img/stats.jpeg" class="card-img-top" alt="stats">
+              <div class="card-body">
+                <h5 class="card-title">Active users</h5>
+                <p class="card-text">List of the users that have been active the last month.</p>
+                <ul class="list-group list-group-flush">
+                  <li class="border-top list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="border-bottom list-group-item">A third item</li>
+                  <li class=" list-group-item"> <a href="#" class="card-link">Visualize report</a>
+                  </li>
+                </ul>
+
+
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
